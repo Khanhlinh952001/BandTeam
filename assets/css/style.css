@@ -1,0 +1,551 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.clear {
+  clear: both;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+#head {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  position: fixed;
+  background-color: #000;
+  z-index: 1;
+}
+
+#nav {
+  display: inline-block;
+}
+
+#nav,
+.subnav {
+  /*  */
+  list-style-type: none;
+}
+
+#nav li {
+  display: inline-block;
+}
+
+#nav li {
+  position: relative;
+}
+
+#nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#nav li a {
+  line-height: 46px;
+  padding: 0px 26px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav > li:hover > a {
+  color: #000;
+  background-color: #ccc;
+}
+
+#nav .subnav {
+  left: 0;
+  /* width: 180px; */
+  top: 100%;
+  display: none;
+  position: absolute;
+  padding-right: 10px;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+#nav .subnav:hover li {
+  display: block;
+}
+
+#nav .subnav{
+    padding-left: 0;
+}
+
+#nav .subnav li a {
+  width: 100%;
+  color: #ae00af;
+  padding: 0 12px;
+  line-height: 38px;
+}
+
+#nav .nav-arrow-down {
+  font: 14px;
+}
+
+#head .search-btn {
+  float: right;
+  padding: 0 21px;
+  line-height: 46px;
+}
+
+#head .search-btn:hover {
+  cursor: pointer;
+  background-color: #f44336;
+}
+
+#head .search-icon {
+  color: #fff;
+  font-size: 20px;
+}
+
+#slider {
+  position: relative;
+  margin-top: 19px;
+  padding-top: 50%;
+
+  /* background: url("/assets/img/la.jpg") top center / cover no-repeat; */
+}
+
+#IMG {
+  position: relative;
+  display: flex;
+  margin: auto;
+}
+
+.textContact {
+  position: absolute;
+  color: #ccc;
+  margin-top: -75px;
+  margin-left: 48%;
+}
+
+#slider .text-contact {
+  position: absolute;
+  bottom: 47px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+#slider .heading {
+  font-weight: 500;
+  font-size: 24px;
+  padding-bottom: 12px;
+}
+
+#slider .description {
+  font-size: 15px;
+}
+#contact,
+#content .content-section {
+  width: 800px;
+  max-width: 100%;
+  padding: 64px 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.contact-heading,
+#content .section-heading {
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+.contact-p,
+#content .section-sud-heading {
+  text-align: center;
+  margin-top: 25px;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+#content .about-text {
+  margin-top: 25px;
+  text-align: justify;
+  /* de bang hai dau */
+  line-height: 1.5;
+  padding: 0 16px;
+}
+
+#content .member-item {
+  float: left;
+  padding-top: 48px;
+  width: 33.33333%;
+  text-align: center;
+}
+
+#content .member-name {
+  font-size: 15px;
+}
+
+#content .member-img {
+  margin-top: 15px;
+  width: 154px;
+  border-radius: 8px;
+}
+
+.tour-section {
+  background-color: #000;
+}
+
+.tickets-list {
+  margin: 40px;
+  background-color: #fff;
+  list-style: none;
+}
+
+.tickets-list li {
+  color: #757575;
+  font-size: 15px;
+  padding: 11px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tickets-list li .sold {
+  background-color: #f44336;
+  color: #fff;
+  margin-left: 16px;
+  padding: 3px 4px;
+}
+
+.tickets-list .sl {
+  float: right;
+  width: 24px;
+  height: 24px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  margin-top: -2px;
+}
+
+.place-list {
+  margin-top: 32px;
+  margin-left: -8px;
+  margin-right: -8px;
+  padding-bottom: 48px;
+}
+
+.place-item {
+  float: left;
+  width: 33.3333%;
+  padding: 0 8px;
+}
+
+.place-img:hover {
+  opacity: 0.6;
+}
+
+.place-img {
+  width: 100%;
+  display: block;
+}
+
+.place-body {
+  padding: 16px;
+  background-color: #fff;
+  font-size: 15px;
+}
+
+.place-body .place-heading {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.place-time {
+  margin-top: 15px;
+  color: #757575;
+}
+
+.desc {
+  margin-top: 15px;
+  line-height: 1.4;
+}
+
+.place-buy-btn {
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  padding: 11px 16px;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.place-buy-btn:hover {
+  color: #000;
+  background-color: #ccc;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close {
+  position: absolute;
+  right: 0;
+  color: #fff;
+}
+
+.modal-header {
+  background-color: #009688;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+.modal-icon {
+  margin-right: 15px;
+}
+
+.moal-container {
+  color: #000;
+  background-color: #fff;
+  width: 900px;
+  min-height: 200px;
+  position: relative;
+  max-width: calc(100%-32px);
+}
+
+.modal-label {
+  padding: 16px;
+  display: block;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.modal-input {
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 15px;
+  padding: 10px;
+  margin-bottom: 14px;
+}
+
+#buy-tickets {
+  background-color: #009688;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  width: 100%;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+#buy-tickets:hover {
+  color: #f44336;
+  background-color: #757575;
+}
+
+.model-footer {
+  text-align: right;
+  padding: 16px;
+}
+.input {
+  margin-top: 60px;
+}
+.col-heigt {
+  display: inline-block;
+  box-sizing: border-box;
+}
+#contact {
+  height: 586px;
+}
+.col-trai .ti-location-pin,
+.ti-mobile,
+.ti-email {
+  margin-right: 20px;
+  margin-left: 30px;
+}
+.col-trai {
+  display: inline-block;
+  line-height: 1.9;
+  font-size: 16px;
+  margin-right: 60px;
+}
+.col-phai {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-left: 35px;
+}
+.row .control {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.row .controlm {
+  width: 100%;
+  padding: 5px;
+}
+.send {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  float: right;
+  margin-top: 10px;
+}
+#map-section {
+  width: 100%;
+  height: 100%;
+}
+
+#map-section img {
+  width: 100%;
+  padding-top: 32px;
+}
+#footer {
+  padding-top: 40px;
+  height: 200px;
+  text-align: center;
+}
+
+#icon-list a {
+  font-size: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 30px;
+  color: #757575;
+  text-decoration: none;
+}
+.coppy a:hover,
+#icon-list a:hover {
+  color: #000;
+}
+
+.coppy {
+  font-size: 20px;
+  padding-top: 40px;
+}
+
+button {
+  position: relative;
+  padding: -1em -1.8em;
+  outline: none;
+  border: 1px solid #303030;
+  background: #212121;
+  color: #ae00ff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
+  overflow: hidden;
+  transition: 0.2s;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 8px;
+  margin-left: 30px;
+}
+
+button:hover {
+  box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
+  transition-delay: 0.6s;
+}
+
+button span {
+  position: absolute;
+}
+
+button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ae00ff);
+}
+
+button:hover span:nth-child(1) {
+  left: 100%;
+  transition: 0.7s;
+}
+
+button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #001eff);
+}
+
+button:hover span:nth-child(3) {
+  right: 100%;
+  transition: 0.7s;
+  transition-delay: 0.35s;
+}
+
+button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #ae00ff);
+}
+
+button:hover span:nth-child(2) {
+  top: 100%;
+  transition: 0.7s;
+  transition-delay: 0.17s;
+}
+
+button span:nth-child(4) {
+  bottom: -100%;
+  left: 0px;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #001eff);
+}
+
+button:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 0.7s;
+  transition-delay: 0.52s;
+}
+
+button:active {
+  background: #ae00af;
+  background: linear-gradient(to top right, #ae00af, #001eff);
+  color: #bfbfbf;
+  box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
+  transition: 0.1s;
+}
+
+button:active
+  span:nth-child(1)
+  span:nth-child(2)
+  span:nth-child(2)
+  span:nth-child(2) {
+  transition: none;
+  transition-delay: none;
+}
+
+.libutton{
+    padding-left: 10px;
+}
